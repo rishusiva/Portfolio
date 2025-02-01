@@ -28,6 +28,15 @@ navLinks.forEach(function(link) {
     });
 });
 
+// Contact Form Submission (Dummy Handler)
+const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for reaching out! I will get back to you soon.');
+    contactForm.reset();
+});
+
 // Change Navbar Style on Scroll
 window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');

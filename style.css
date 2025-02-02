@@ -736,13 +736,14 @@ header {
 .project-item {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px;
     align-items: flex-start;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    flex-direction: row;
+    flex: 0 0 48%; /* Keeps two items per row */
 }
 
 .project-heading {
@@ -752,7 +753,6 @@ header {
     margin-bottom: 20px;
     font-weight: bold;
 }
-
 
 .project-image {
     flex: 1;
@@ -784,7 +784,7 @@ header {
 }
 
 .project-details ul {
-    flex-grow: 1; /* Pushes the Read More button downwards */
+    flex-grow: 1;
 }
 
 .project-item a.btn {
@@ -795,22 +795,26 @@ header {
     border-radius: 20px;
     transition: background-color 0.3s ease;
     margin-top: auto;
-    align-self: flex-start; /* Align to bottom left */
+    align-self: flex-start;
 }
 
 .project-item a.btn:hover {
     background-color: var(--secondary-color);
 }
 
-/* Responsive Adjustments */
+/* Responsive Fix for Mobile */
 @media (max-width: 768px) {
     .project-item {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
     .project-image {
         max-width: 100%;
+    }
+
+    .project-details {
+        text-align: center;
     }
 
     .project-heading {

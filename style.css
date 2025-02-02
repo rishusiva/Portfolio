@@ -5,6 +5,7 @@
     --accent-color: #C8B6A6;
     --light-color: #F1DEC9;
     --font-family: 'Montserrat', sans-serif;
+    --text-color: #000; /* New addition for black text */
 }
 
 /* Reset and Box Sizing */
@@ -18,7 +19,7 @@
 body {
     font-family: var(--font-family);
     line-height: 1.6;
-    color: var(--primary-color);
+    color: var(--text-color); /* Black for main text */
     background-color: var(--light-color);
     scroll-behavior: smooth;
 }
@@ -146,7 +147,7 @@ header a.btn:hover {
 
 .skill-card {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #000; /* Changed to black */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -165,6 +166,7 @@ header a.btn:hover {
 .skill-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #000; /* Black heading for skills */
 }
 
 .skill-tags {
@@ -175,7 +177,7 @@ header a.btn:hover {
 
 .skill-tags span {
     background-color: var(--accent-color);
-    color: #fff;
+    color: #000; /* Tags text black */
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.9em;

@@ -754,6 +754,11 @@ header {
 .project-details {
     flex: 2;
     padding: 10px 20px;
+    position: relative; /* Enable positioning for the button to be placed at the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure it stretches to occupy the full height of the project-item */
 }
 
 
@@ -768,11 +773,13 @@ header {
 }
 
 .project-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    flex-grow: 1; /* Pushes the Read More button downwards */
 }
 
 .project-item a.btn {
+    position: absolute;
+    bottom: 20px; /* Positioned near the bottom of the project box */
+    left: 20px; /* Positioned towards the left */
     background-color: var(--accent-color);
     padding: 10px 20px;
     color: #fff;

@@ -758,14 +758,12 @@ header {
 }
 
 .project-details {
-    flex: 2;
-    padding: 10px 20px;
-    position: relative; /* Enable positioning for the button to be placed at the bottom */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%; /* Ensure it stretches to occupy the full height of the project-item */
+    justify-content: flex-start;
+    height: 100%;
 }
+
 
 
 .project-details h3 {
@@ -783,15 +781,14 @@ header {
 }
 
 .project-item a.btn {
-    position: absolute;
-    bottom: 20px; /* Positioned near the bottom of the project box */
-    left: 20px; /* Positioned towards the left */
     background-color: var(--accent-color);
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s ease;
+    margin-top: auto; /* Automatically pushes the button to the bottom */
+    align-self: flex-start; /* Aligns it to the left */
 }
 
 .project-item a.btn:hover {

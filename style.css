@@ -636,7 +636,6 @@ footer p {
 header {
     background-attachment: fixed;
 }
-
 .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -653,4 +652,3 @@ header {
     object-fit: cover; /* Ensures image fits inside the circle */
     border: 5px solid var(--accent-color); /* Optional border */
 }
-

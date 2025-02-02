@@ -653,3 +653,60 @@ header {
     border: 5px solid var(--accent-color); /* Optional border */
 }
 
+.projects-grid-new {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.project-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.project-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-content h3 {
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.project-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.project-content ul li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.project-content ul li::before {
+    content: "\f00c";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+

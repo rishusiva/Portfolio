@@ -738,7 +738,7 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
-    align-items: flex-start;
+    align-items: flex-start; /* Aligns image and text at the top */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -767,10 +767,10 @@ header {
 
 .project-details {
     flex: 2;
-    padding: 10px 20px;
+    padding: 0 20px; /* Remove any excessive padding */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .project-details h3 {

@@ -230,7 +230,7 @@ section h2::after {
 
 .skill p {
     font-size: 1em;
-    color: var(--primary-color);
+    color: black;
 }
 
 .skill:hover {

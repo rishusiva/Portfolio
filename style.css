@@ -5,7 +5,7 @@
     --accent-color: #C8B6A6;
     --light-color: #F1DEC9;
     --font-family: 'Montserrat', sans-serif;
-    --text-color: #000; /* Explicit black text color */
+    --text-color: #000;
 }
 
 /* Reset and Box Sizing */
@@ -26,22 +26,47 @@ body {
 
 /* Navigation Menu */
 nav {
-    background: rgba(165, 144, 124, 0.9);
+    background: var(--secondary-color);
     color: #fff;
     position: fixed;
     width: 100%;
+    padding: 15px 0;
     z-index: 1000;
     transition: background 0.3s;
 }
 
-nav.scrolled {
-    background: var(--secondary-color);
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
 }
 
 /* Header Section */
 header {
     background: url('images/header-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
     color: #fff;
     position: relative;
@@ -64,8 +89,8 @@ header::after {
 }
 
 header h1 {
-    font-size: 4em;
-    margin-bottom: 20px;
+    font-size: 3.5em;
+    margin-bottom: 10px;
 }
 
 header p {
@@ -75,10 +100,10 @@ header p {
 
 header a.btn {
     background: var(--accent-color);
-    padding: 15px 40px;
+    padding: 10px 30px;
     color: #fff;
     font-size: 1.2em;
-    border-radius: 50px;
+    border-radius: 30px;
     text-decoration: none;
     transition: 0.3s ease;
 }
@@ -89,7 +114,7 @@ header a.btn:hover {
 
 /* Skills Section */
 .skills-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background-color: var(--light-color);
 }
 
@@ -97,18 +122,18 @@ header a.btn:hover {
     text-align: center;
     font-size: 2.5em;
     color: var(--primary-color);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
 
 .skill-card {
     background-color: var(--primary-color);
-    color: var(--text-color); /* Set black text for the entire card */
+    color: var(--text-color);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -122,13 +147,12 @@ header a.btn:hover {
 .skill-card i {
     font-size: 2em;
     margin-bottom: 15px;
-    color: #000; /* Set icon color to black */
+    color: var(--text-color);
 }
 
 .skill-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: var(--text-color); /* Black heading */
 }
 
 .skill-tags {
@@ -139,155 +163,45 @@ header a.btn:hover {
 
 .skill-tags span {
     background-color: var(--accent-color);
-    color: var(--text-color); /* Black text for tags */
-    padding: 5px 15px;
+    color: var(--text-color);
+    padding: 5px 10px;
     border-radius: 20px;
     font-size: 0.9em;
 }
 
-.skill-tags span:hover {
-    background-color: var(--secondary-color);
+/* Fix Grid Layout for Other Sections */
+.projects-section,
+.timeline-section,
+.education-section,
+.contact-section {
+    padding: 60px 20px;
 }
 
-/* Projects Section */
-.projects-section {
-    padding: 80px 20px;
-}
-
-.projects-section h2 {
-    text-align: center;
-    font-size: 2.5em;
-    color: var(--primary-color);
-    margin-bottom: 60px;
-}
-
-.projects-grid {
+.projects-grid,
+.education-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-.project-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-info h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: var(--primary-color);
-}
-
-.project-info p {
-    color: var(--primary-color);
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-/* Timeline Section (Work Experience) */
-.timeline-section {
-    padding: 80px 20px;
-}
-
-.timeline-section h2 {
-    text-align: center;
-    font-size: 2.5em;
-    color: var(--primary-color);
-    margin-bottom: 60px;
-}
-
-.timeline {
-    position: relative;
-}
-
-.timeline-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-item h3 {
-    font-size: 1.5em;
-    color: var(--primary-color);
-}
-
-.timeline-item p {
-    font-size: 1em;
-    color: var(--primary-color);
-}
-
-/* Education Section */
-.education-section {
-    padding: 80px 20px;
-}
-
-.education-section h2 {
-    text-align: center;
-    font-size: 2.5em;
-    color: var(--primary-color);
-    margin-bottom: 60px;
-}
-
-.education-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
+.project-card,
+.timeline-item,
 .education-item {
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Section */
-.contact-section {
-    padding: 80px 20px;
-}
-
-.contact-section h2 {
+/* Footer Styling */
+footer {
     text-align: center;
-    font-size: 2.5em;
-    color: var(--primary-color);
-    margin-bottom: 60px;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 20px 0;
 }
 
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contact-info {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    flex: 0 0 45%;
-}
-
-.contact-info h3 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: var(--primary-color);
-}
-
-.contact-info p {
-    font-size: 1em;
-    color: var(--primary-color);
-}
-
-/* Responsive Design */
+/* Responsive Design Fixes */
 @media (max-width: 768px) {
     .skills-grid,
     .projects-grid,
@@ -295,13 +209,9 @@ header a.btn:hover {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .contact-container {
+    nav ul {
         flex-direction: column;
-    }
-
-    .contact-info {
-        flex: 0 0 100%;
-        margin-bottom: 20px;
+        display: none;
     }
 
     header h1 {

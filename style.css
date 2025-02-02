@@ -423,7 +423,7 @@ section h2::after {
 
 .education-item p {
     font-size: 1em;
-    color: black;
+    color: black !important;
 }
 
 .education-item:hover {

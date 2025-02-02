@@ -1,4 +1,3 @@
-
 /* Variables for Colors and Fonts */
 :root {
     --primary-color: #8D7B68;       /* Darkest */
@@ -735,16 +734,15 @@ header {
 }
 
 .project-item {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex: 0 0 48%; /* Two items per row, each taking up roughly 50% of the width */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: relative; /* Enables absolute positioning for the button */
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
-
 
 
 .project-image {
@@ -761,11 +759,12 @@ header {
 .project-details {
     flex: 2;
     padding: 10px 20px;
+    position: relative; /* Enable positioning for the button to be placed at the bottom */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
+    height: 100%; /* Ensure it stretches to occupy the full height of the project-item */
 }
-
 
 
 .project-details h3 {
@@ -783,15 +782,15 @@ header {
 }
 
 .project-item a.btn {
+    position: absolute;
+    bottom: 20px; /* Positioned near the bottom of the project box */
+    left: 20px; /* Positioned towards the left */
     background-color: var(--accent-color);
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
 }
 
 .project-item a.btn:hover {

@@ -1,6 +1,6 @@
 /* Variables for Colors and Fonts */
 :root {
-    --primary-color: black;       /* Darkest */
+    --primary-color: #8D7B68;       /* Darkest */
     --secondary-color: #A4907C;     /* Dark */
     --accent-color: #C8B6A6;        /* Medium */
     --light-color: #F1DEC9;         /* Lightest */
@@ -368,7 +368,7 @@ section h2::after {
 .timeline-content p {
     font-size: 1em;
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: black;
 }
 
 .timeline-content ul {
@@ -379,7 +379,7 @@ section h2::after {
     margin-bottom: 10px;
     position: relative;
     padding-left: 20px;
-    color: var(--primary-color);
+    color: black;
 }
 
 .timeline-content ul li::before {

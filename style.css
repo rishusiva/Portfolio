@@ -723,23 +723,26 @@ header {
 
 .projects-container {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between project items */
+    justify-content: space-between;
 }
 
 .project-item {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex: 0 0 48%; /* Two items per row, each taking up roughly 50% of the width */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
+
 
 .project-image {
     flex: 1;
-    max-width: 300px;
+    max-width: 40%; /* Restricts the image width to 40% of the project-item */
 }
 
 .project-image img {
@@ -752,6 +755,7 @@ header {
     flex: 2;
     padding: 10px 20px;
 }
+
 
 .project-details h3 {
     font-size: 1.8em;

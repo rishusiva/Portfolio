@@ -5,7 +5,7 @@
     --accent-color: #C8B6A6;
     --light-color: #F1DEC9;
     --font-family: 'Montserrat', sans-serif;
-    --text-color: #000; /* New addition for black text */
+    --text-color: #000; /* Explicit black text color */
 }
 
 /* Reset and Box Sizing */
@@ -19,7 +19,7 @@
 body {
     font-family: var(--font-family);
     line-height: 1.6;
-    color: var(--text-color); /* Black for main text */
+    color: var(--text-color);
     background-color: var(--light-color);
     scroll-behavior: smooth;
 }
@@ -36,45 +36,6 @@ nav {
 
 nav.scrolled {
     background: var(--secondary-color);
-}
-
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.8em;
-    font-weight: 700;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 20px 0;
-}
-
-nav ul li a:hover,
-nav ul li a.current {
-    color: var(--accent-color);
-}
-
-.menu-toggle {
-    display: none;
 }
 
 /* Header Section */
@@ -147,7 +108,7 @@ header a.btn:hover {
 
 .skill-card {
     background-color: var(--primary-color);
-    color: #000; /* Changed to black */
+    color: var(--text-color); /* Set black text for the entire card */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -161,12 +122,13 @@ header a.btn:hover {
 .skill-card i {
     font-size: 2em;
     margin-bottom: 15px;
+    color: #000; /* Set icon color to black */
 }
 
 .skill-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #000; /* Black heading for skills */
+    color: var(--text-color); /* Black heading */
 }
 
 .skill-tags {
@@ -177,7 +139,7 @@ header a.btn:hover {
 
 .skill-tags span {
     background-color: var(--accent-color);
-    color: #000; /* Tags text black */
+    color: var(--text-color); /* Black text for tags */
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.9em;

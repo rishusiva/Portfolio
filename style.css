@@ -735,15 +735,16 @@ header {
 }
 
 .project-item {
-    flex: 0 0 48%; /* Two items per row, each taking up roughly 50% of the width */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    position: relative; /* Enables absolute positioning for the button */
 }
+
 
 
 .project-image {
@@ -758,10 +759,11 @@ header {
 }
 
 .project-details {
+    flex: 2;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100%;
 }
 
 
@@ -787,8 +789,9 @@ header {
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    margin-top: auto; /* Automatically pushes the button to the bottom */
-    align-self: flex-start; /* Aligns it to the left */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 .project-item a.btn:hover {

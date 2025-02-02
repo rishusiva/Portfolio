@@ -368,7 +368,7 @@ section h2::after {
 .timeline-content p {
     font-size: 1em;
     margin-bottom: 10px;
-    color: black;
+    color: black !important;
 }
 
 .timeline-content ul {
@@ -379,7 +379,7 @@ section h2::after {
     margin-bottom: 10px;
     position: relative;
     padding-left: 20px;
-    color: black;
+    color: black !important;
 }
 
 .timeline-content ul li::before {

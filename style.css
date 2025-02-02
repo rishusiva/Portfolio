@@ -636,3 +636,21 @@ footer p {
 header {
     background-attachment: fixed;
 }
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* Space between the text and image */
+}
+
+.contact-image img {
+    width: 200px; /* Adjust the size if necessary */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image fits inside the circle */
+    border: 5px solid var(--accent-color); /* Optional border */
+}
+

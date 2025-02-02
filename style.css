@@ -1,6 +1,6 @@
 /* Variables for Colors and Fonts */
 :root {
-    --primary-color: #8D7B68;       /* Darkest */
+    --primary-color: black;       /* Darkest */
     --secondary-color: #A4907C;     /* Dark */
     --accent-color: #C8B6A6;        /* Medium */
     --light-color: #F1DEC9;         /* Lightest */

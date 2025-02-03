@@ -697,7 +697,7 @@ header {
 
 .project-content h3 {
     font-size: 1.8em;
-    color: var(--primary-color);
+    color: black;
     margin-bottom: 10px;
 }
 

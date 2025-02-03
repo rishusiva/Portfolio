@@ -1,12 +1,11 @@
 /* Variables for Colors and Fonts */
 :root {
-    --primary-color: #8D7B68;       /* Darkest */
-    --secondary-color: #A4907C;     /* Dark */
-    --accent-color: #C8B6A6;        /* Medium */
-    --light-color: #F1DEC9;         /* Lightest */
+    --primary-color: #1E3A5F;        /* Navy Blue (Dark) */
+    --secondary-color: #3A5C7F;      /* Steel Blue */
+    --accent-color: #6DAEDB;         /* Sky Blue */
+    --light-color: #EBF4FA;          /* Light Blue/Gray */
     --font-family: 'Montserrat', sans-serif;
 }
-
 /* Reset and Box Sizing */
 * {
     margin: 0;

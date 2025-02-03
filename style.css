@@ -704,7 +704,7 @@ header {
 .project-content p {
     font-size: 1em;
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: black;
 }
 
 .project-content ul {
@@ -750,7 +750,7 @@ header {
 .project-heading {
     width: 100%;
     font-size: 1.8em;
-    color: var(--primary-color);
+    color: black;
     margin-bottom: 20px;
     font-weight: bold;
 }

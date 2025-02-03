@@ -821,24 +821,3 @@ header {
         text-align: center;
     }
 }
-
-.project-tags {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.project-tags span {
-    background-color: var(--accent-color);
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 0.9em;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.project-tags span:hover {
-    background-color: var(--secondary-color);
-}
-

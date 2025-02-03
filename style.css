@@ -279,13 +279,13 @@ section h2::after {
 .project-info h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: black;
+    color: black !important;
 }
 
 .project-info p {
     font-size: 1em;
     margin-bottom: 15px;
-    color: black;
+    color: black !important;
 }
 
 .project-card a.btn {

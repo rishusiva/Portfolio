@@ -279,13 +279,13 @@ section h2::after {
 .project-info h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: black;
 }
 
 .project-info p {
     font-size: 1em;
     margin-bottom: 15px;
-    color: var(--primary-color);
+    color: black;
 }
 
 .project-card a.btn {
@@ -379,13 +379,13 @@ section h2::after {
 .timeline-content h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: black;
 }
 
 .timeline-content p {
     font-size: 1em;
     margin-bottom: 10px;
-    color: white !important;
+    color: black;
 }
 
 .timeline-content ul {
@@ -396,7 +396,7 @@ section h2::after {
     margin-bottom: 10px;
     position: relative;
     padding-left: 20px;
-    color: white !important;
+    color: black;
 }
 
 .timeline-content ul li::before {
@@ -435,12 +435,12 @@ section h2::after {
 .education-item h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: white !important;
+    color: black;
 }
 
 .education-item p {
     font-size: 1em;
-    color: white !important;
+    color: black;
 }
 
 .education-item:hover {

@@ -1,9 +1,9 @@
 /* Variables for Colors and Fonts */
 :root {
-    --primary-color: #1E3A5F;        /* Navy Blue (Dark) */
-    --secondary-color: #3A5C7F;      /* Steel Blue */
-    --accent-color: #6DAEDB;         /* Sky Blue */
-    --light-color: #EBF4FA;          /* Light Blue/Gray */
+    --primary-color: #0A192F;        /* Dark Navy */
+    --secondary-color: #133B5C;      /* Deep Steel Blue */
+    --accent-color: #3A7CA5;         /* Teal Blue */
+    --light-color: #E1E9F1;          /* Light Gray/Blue */
     --font-family: 'Montserrat', sans-serif;
 }
 /* Reset and Box Sizing */

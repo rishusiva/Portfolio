@@ -1,10 +1,10 @@
 /* Variables for Colors and Fonts */
 :root {
-    --primary-color: #E1E9F1;        /* Light Grayish Blue for Text */
-    --secondary-color: #133B5C;      /* Deep Steel Blue for Navigation */
-    --accent-color: #3A7CA5;         /* Teal Blue for Highlights */
-    --light-color: #0A192F;          /* Dark Navy Background */
-    --card-bg-color: #112240;        /* Slightly lighter dark background for cards */
+    --primary-color: #E0E8F9;       /* Light Blue-Gray for Text */
+    --secondary-color: #1B2B44;     /* Dark Blue for Navigation */
+    --accent-color: #3D7EA6;        /* Teal Blue for Highlights */
+    --light-color: #0B1E31;         /* Dark Background */
+    --card-bg-color: #16243C;       /* Slightly lighter dark background for cards */
     --font-family: 'Montserrat', sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
     font-family: var(--font-family);
     line-height: 1.6;
     color: var(--primary-color); /* Light Text */
-    background-color: var(--light-color); /* Dark Navy Background */
+    background-color: var(--light-color); /* Dark Background */
     scroll-behavior: smooth;
 }
 
@@ -47,7 +47,7 @@ body {
 
 /* Navigation Menu */
 nav {
-    background: rgba(19, 59, 92, 0.95); /* Deep Steel Blue with slight transparency */
+    background: rgba(27, 43, 68, 0.95); /* Dark Blue with slight transparency */
     color: #fff;
     position: fixed;
     width: 100%;
@@ -56,7 +56,7 @@ nav {
 }
 
 nav.scrolled {
-    background: var(--secondary-color); /* Solid Deep Steel Blue */
+    background: var(--secondary-color); /* Solid Dark Blue */
 }
 
 nav .container {
@@ -134,7 +134,7 @@ header {
 
 header::after {
     content: '';
-    background: rgba(10, 25, 47, 0.8); /* Dark Navy Overlay */
+    background: rgba(11, 30, 49, 0.8); /* Dark Blue Overlay */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -174,7 +174,7 @@ header a.btn {
 }
 
 header a.btn:hover {
-    background: var(--secondary-color); /* Deep Steel Blue */
+    background: var(--secondary-color); /* Dark Blue */
     color: #fff;
 }
 
@@ -187,7 +187,7 @@ section {
 section h2 {
     text-align: center;
     font-size: 2.5em;
-    color: var(--primary-color); /* Light Grayish Blue Text */
+    color: var(--primary-color); /* Light Blue-Gray Text */
     margin-bottom: 60px;
     position: relative;
 }
